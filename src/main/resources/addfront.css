@@ -1,0 +1,11 @@
+#AnchorPane {
+    -fx-background-color: #00CED1; /* turquoise */
+}
+
+#button_apply {
+    -fx-background-color: #1E90FF; /* bleu */
+}
+
+ImageView {
+    -fx-background-color: #008000; /* vert */
+}

@@ -1,0 +1,29 @@
+/* Dynamic styles */
+/* Add transitions for smoother effects */
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-transition: transform 0.5s ease;
+}
+
+/* On hover, scale the image */
+.image-view:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Ensure responsiveness for the accordion */
+.accordion {
+    -fx-min-width: 200px;
+    -fx-pref-width: 300px;
+    -fx-max-width: 400px;
+}
+
+/* Style for the "view more" icon */
+.imageView#viewMoreIcon {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/* Rotate the "view more" icon on hover */
+.imageView#viewMoreIcon:hover {
+    -fx-rotate: 45deg;
+}

@@ -1,0 +1,85 @@
+#AnchorPane {
+    -fx-background-color: #3b5998; /* Couleur bleue */
+}
+
+.button {
+    -fx-background-color: #ffffff; /* Couleur blanche */
+    -fx-text-fill: #3b5998; /* Couleur bleue pour le texte */
+}
+
+.table-view {
+    -fx-background-color: #ffffff; /* Couleur blanche */
+    -fx-text-background-color: #3b5998; /* Couleur bleue pour le texte des cellules */
+    -fx-selection-bar: #3b5998; /* Couleur bleue pour la sélection de ligne */
+    -fx-selection-bar-non-focused: #3b5998; /* Couleur bleue pour la sélection de ligne non active */
+    -fx-table-cell-border-color: #3b5998; /* Couleur bleue pour les bordures des cellules */
+}
+
+/*.table-view#table_annonce .table-cell {
+    -fx-background-color: #ffffff;  Couleur blanche 
+    -fx-text-fill: #3b5998;  Couleur bleue pour le texte 
+}*/
+
+.table-view#table_commentaire .table-cell {
+    -fx-background-color: #ffffff; /* Couleur blanche */
+    -fx-text-fill: #3b5998; /* Couleur bleue pour le texte */
+}
+#button_ajouter,
+#button_like,
+#button_dislike,
+#button_commenter,
+#button_affichercommentaire,
+#button_image,
+#button_supprimer {
+    -fx-background-color: #00ff00; /* vert */
+}
+
+#AnchorPane {
+    -fx-background-color: #0072C6; /* Bleu ciel */
+}
+
+/* Boutons en vert */
+.button {
+    -fx-background-color: #4CAF50; /* Vert */
+    -fx-text-fill: white;
+}
+
+/* Bouton supprimer en rouge */
+#button_supprimer {
+    -fx-background-color: #F44336; /* Rouge */
+    -fx-text-fill: white;
+}
+
+/* Bouton commenter en bleu ciel */
+#button_commenter {
+    -fx-background-color: #87CEFA; /* Bleu ciel */
+    -fx-text-fill: white;
+}
+
+/* Bouton like en jaune */
+#button_like {
+    -fx-background-color: #FFC107; /* Jaune */
+    -fx-text-fill: white;
+}
+
+/* Bouton dislike en rouge */
+#button_dislike {
+    -fx-background-color: #F44336; /* Rouge */
+    -fx-text-fill: white;
+}
+
+/* Tableau de la liste des annonces */
+#table_annonce {
+    -fx-background-color: white;
+    -fx-border-color: #4CAF50; /* Vert */
+}
+
+/* Tableau de la liste des commentaires */
+#table_commentaire {
+    -fx-background-color: white;
+    -fx-border-color: #87CEFA; /* Bleu ciel */
+}
+
+.table-view#table_annonce .table-row-cell:selected {
+-fx-background-color: #FF69B4; /* Couleur gris clair */
+}

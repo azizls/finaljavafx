@@ -1,0 +1,84 @@
+
+/* Style for the ListView */
+.list-view {
+    -fx-background-color: #f0f2f5; /* Background color */
+    -fx-padding: 20px; /* Padding around the ListView */
+}
+
+/* Style for the ListCell */
+.list-cell {
+    -fx-padding: 20px; /* Padding inside each cell */
+    -fx-font-size: 18px; /* Font size of the text */
+    -fx-text-fill: #333; /* Text color */
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 8px; /* Border radius */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10,0,0,2 ); /* Drop shadow effect */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.3s; /* Transition effect */
+}
+
+/* Hover effect for the ListCell */
+.list-cell:hover {
+    -fx-background-color: #f5f5f5; /* Background color on hover */
+    -fx-translate-y: -2px; /* Move the cell slightly up */
+    -fx-scale-x: 1.02; /* Scale the cell on hover */
+    -fx-scale-y: 1.02; /* Scale the cell on hover */
+}
+
+/* Style for the selected ListCell */
+.list-cell:selected {
+    -fx-background-color: linear-gradient(to right, #002e8a, #1698f6, #33d3ff); /* Gradient background color of the selected cell */
+    -fx-text-fill: white; /* Text color of the selected cell */
+}
+
+/* Style for the ListView scrollbar */
+.scroll-bar {
+    -fx-background-color: transparent; /* Background color of the scrollbar */
+}
+
+/* Style for the ListView scrollbar thumb */
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #757575; /* Color of the scrollbar thumb */
+    -fx-background-radius: 6px; /* Radius of the thumb */
+}
+
+/* Style for the ListView scrollbar track */
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent; /* Color of the scrollbar track */
+}
+
+/* Button styles */
+.button {
+    -fx-font-family: "Helvetica"; /* Font family */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-style: italic; /* Font style */
+    -fx-background-color: #000000; /* Background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 10px 18px; /* Padding */
+    -fx-background-radius: 20px; /* Border radius */
+    -fx-cursor: pointer; /* Cursor style */
+    -fx-effect: dropshadow( gaussian , rgb(77, 119, 154), 10,0,0,8 ); /* Drop shadow effect */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.3s, -fx-scale-x 0.3s, -fx-scale-y 0.3s, -fx-rotate 0.3s; /* Transition effect */
+}
+
+/* Hover effect for the button */
+.button:hover {
+    -fx-background-color: #498ffc; /* Background color on hover */
+    -fx-translate-y: -4px; /* Move the button slightly up */
+    -fx-scale-x: 1.05; /* Scale the button on hover */
+    -fx-scale-y: 1.05; /* Scale the button on hover */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 10,0,0,8 ); /* Enhance shadow on hover */
+    -fx-rotate: 2deg; /* Rotate slightly on hover */
+}
+#labelTitre {
+    -fx-font-size: 28px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-background-color: #2f46c7; /* Background color */
+    -fx-padding: 10px 16px; /* Padding around the text */
+    -fx-background-radius: 5px; /* Background radius */
+}
+
+

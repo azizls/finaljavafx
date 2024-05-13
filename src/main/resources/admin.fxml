@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="1051.0" prefWidth="1591.0" stylesheets="@affarietstyleuser.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+    <TableView fx:id="afficher" layoutX="256.0" layoutY="7.0" prefHeight="499.0" prefWidth="1338.0">
+        <columns>
+          <TableColumn fx:id="id_colone" prefWidth="105.0" text="id_user" />
+          <TableColumn fx:id="nom_colone" prefWidth="136.0" text="nom" />
+            <TableColumn fx:id="prenom_colone" prefWidth="136.0" text="prenom" />
+            <TableColumn fx:id="age_colone" prefWidth="136.0" text="age" />
+            <TableColumn fx:id="email_colone" prefWidth="153.0" text="email" />
+            <TableColumn fx:id="mdp_colone" prefWidth="119.0" text="mdp" />
+            <TableColumn fx:id="num_colone" prefWidth="136.0" text="num" />
+            <TableColumn fx:id="adresse_colone" prefWidth="136.0" text="adresse" />
+            <TableColumn fx:id="id_role_colone" prefWidth="294.0" text="id_role" />
+        </columns>
+      </TableView>
+   <Button fx:id="supprimeruser" layoutX="864.0" layoutY="552.0" mnemonicParsing="false" onAction="#supprimeruser" prefHeight="30.0" prefWidth="151.0" styleClass="my-button" text="supprimer" />
+   <TextField fx:id="text_recherche" layoutX="638.0" layoutY="524.0" onKeyPressed="#rechercher" />
+   <TextField fx:id="text_rechercher2" layoutX="638.0" layoutY="585.0" onKeyPressed="#rechercher2" />
+   <Label layoutX="500.0" layoutY="528.0" text="search by id" />
+   <Label layoutX="482.0" layoutY="591.0" text="search by email" />
+   <Pane layoutX="-3.0" layoutY="-2.0" prefHeight="1051.0" prefWidth="258.0" styleClass="card3" stylesheets="@designDashbord.css">
+      <children>
+         <ImageView fitHeight="154.0" fitWidth="235.0" layoutX="22.0" layoutY="23.0">
+            <image>
+
+            </image>
+         </ImageView>
+         <Button fx:id="btn_produit" layoutX="90.0" layoutY="370.0" mnemonicParsing="false" onAction="#produit_back" prefHeight="25.0" prefWidth="135.0" styleClass="nav-btn" text="Article" />
+         <Button fx:id="btn_event" layoutX="62.0" layoutY="431.0" mnemonicParsing="false" onAction="#event_back" prefHeight="33.0" prefWidth="135.0" styleClass="nav-btn" text="Evennement" />
+         <Button fx:id="btn_blog" layoutX="42.0" layoutY="481.0" mnemonicParsing="false" onAction="#blog_back" prefHeight="34.0" prefWidth="177.0" styleClass="nav-btn" text="Espace partenaire" />
+         <Button fx:id="btn_reclamation" layoutX="63.0" layoutY="541.0" mnemonicParsing="false" onAction="#reclamation_back" prefHeight="33.0" prefWidth="135.0" styleClass="nav-btn" text="Reclamation" />
+         <ImageView fitHeight="182.0" fitWidth="199.0" layoutX="30.0" layoutY="48.0">
+            <image>
+
+            </image>
+         </ImageView>
+         <Button fx:id="btn_reclamation1" layoutX="62.0" layoutY="601.0" mnemonicParsing="false" onAction="#reponse" prefHeight="33.0" prefWidth="135.0" styleClass="nav-btn" text="reponse" />
+         <Button fx:id="btn_reclamation11" layoutX="63.0" layoutY="673.0" mnemonicParsing="false" onAction="#statistique" prefHeight="33.0" prefWidth="135.0" styleClass="nav-btn" text="statistique" />
+      </children>
+   </Pane>
+    
+</AnchorPane>

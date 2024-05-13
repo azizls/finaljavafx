@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="794.0" prefWidth="1211.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Espace">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="844.0" layoutX="-429.0" layoutY="-363.0" rotate="140.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+      <Circle layoutX="65.0" layoutY="48.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="689.0" layoutY="679.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="42.0" prefWidth="256.0" text="Ajouter votre espace partenaire" />
+      <TextField fx:id="nomTextField" layoutX="93.0" layoutY="108.0" prefHeight="26.0" prefWidth="256.0" />
+      <TextField fx:id="localisationTextField" editable="false" layoutX="93.0" layoutY="160.0" prefHeight="26.0" prefWidth="256.0" />
+      <RadioButton fx:id="idCouvert" layoutX="179.0" layoutY="612.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="159.0" text="Espace couvert">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="idFumeur" layoutX="637.0" layoutY="560.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Espace Fumeur">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="idEnfant" layoutX="637.0" layoutY="604.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="150.0" text="Espace Enfants">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="idService" layoutX="182.0" layoutY="553.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="186.0" text="Service Restauration">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></RadioButton>
+      <ChoiceBox fx:id="idType" layoutX="93.0" layoutY="213.0" prefWidth="150.0" />
+      <Button fx:id="uploadImgBtn" layoutX="93.0" layoutY="404.0" mnemonicParsing="false" onAction="#onUploadButtonClick" prefHeight="25.0" prefWidth="150.0" text="upload" />
+      <Button fx:id="AfficherBtn" layoutX="153.0" layoutY="679.0" mnemonicParsing="false" onAction="#AfficherListe" text="Consevoir votre liste d'espace" />
+      <TextArea fx:id="descriptionTextField" layoutX="91.0" layoutY="297.0" prefHeight="79.0" prefWidth="396.0" wrapText="true" />
+      <TextArea fx:id="imageLinksLabel" layoutX="92.0" layoutY="453.0" prefHeight="62.0" prefWidth="396.0" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextArea>
+      <Text fill="WHITE" layoutX="52.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Viragecom">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="318.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter espace partenaire" textAlignment="CENTER" wrappingWidth="469.94677734375">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localisation" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="96.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <WebView fx:id="mapView" layoutX="502.0" layoutY="86.0" prefHeight="458.0" prefWidth="743.0" />
+   </children>
+</AnchorPane>

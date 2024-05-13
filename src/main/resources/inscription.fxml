@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InscriptionController">
+
+   <!-- Champs de texte pour le nom, le prénom, l'âge, l'email, le mot de passe, et l'adresse -->
+   <children>
+      <TextField fx:id="text_nom" layoutX="341.0" layoutY="80.0" />
+      <TextField fx:id="text_prenom" layoutX="624.0" layoutY="80.0" prefHeight="28.0" prefWidth="150.0" />
+      <TextField fx:id="text_age" layoutX="342.0" layoutY="173.0" />
+      <TextField fx:id="text_email" layoutX="624.0" layoutY="163.0" prefHeight="28.0" prefWidth="150.0" />
+      <TextField fx:id="text_mdp" layoutX="633.0" layoutY="242.0" />
+      <TextField fx:id="text_adresse" layoutX="341.0" layoutY="306.0" prefHeight="27.0" prefWidth="141.0" />
+
+      <!-- Libellés pour les champs de texte -->
+      <Label layoutX="262.0" layoutY="84.0" text="nom" />
+      <Label layoutX="545.0" layoutY="84.0" text="prenom" />
+      <Label layoutX="262.0" layoutY="177.0" prefHeight="20.0" prefWidth="51.0" text="age" />
+      <Label layoutX="545.0" layoutY="164.0" text="email" />
+      <Label layoutX="516.0" layoutY="246.0" text="mot de passe" />
+      <Label layoutX="247.0" layoutY="310.0" text="adresse" />
+
+      <!-- Bouton pour appliquer les changements -->
+      <Button fx:id="button_apply" layoutX="464.0" layoutY="489.0" mnemonicParsing="false" onAction="#sauvgarder" prefHeight="39.0" prefWidth="157.0" styleClass="my-button" text="apply" />
+
+      <!-- Champ de texte pour le numéro -->
+      <TextField fx:id="text_num" layoutX="341.0" layoutY="242.0" prefHeight="28.0" prefWidth="141.0" />
+      <Label layoutX="249.0" layoutY="246.0" text="numero" />
+
+      <!-- Bouton pour l'image -->
+      <Button fx:id="text_buton_image" layoutX="601.0" layoutY="390.0" mnemonicParsing="false" onAction="#image" prefHeight="25.0" prefWidth="124.0" styleClass="my-button" text="image" />
+
+      <!-- Champ de texte pour l'URL de l'image -->
+      <TextField fx:id="text_image" layoutX="341.0" layoutY="389.0" prefHeight="25.0" prefWidth="220.0" />
+
+      <!-- Libellé pour le mot de passe -->
+      <Label fx:id="labelmdp" graphicTextGap="2.0" layoutX="601.0" layoutY="273.0" prefHeight="66.0" prefWidth="204.0" styleClass="labelmdp" text=" Veuillez saisir un mot de passe contenant au moins 8 caractères avec au moins une lettre majuscule" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="612.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+      <ImageView fitHeight="240.0" fitWidth="183.0" layoutX="21.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOGOFII-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

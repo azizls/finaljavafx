@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1500.0" stylesheets="@affichageStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Affichage">
+   <children>
+       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="703.0" layoutX="-403.0" layoutY="-301.0" rotate="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1275.0" />
+       <Circle layoutX="34.0" layoutY="35.0" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+       <Text fill="WHITE" layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Viragecom">
+           <font>
+               <Font name="System Bold Italic" size="24.0" />
+           </font>
+       </Text>
+      <TableView fx:id="ReclamationsTable" layoutX="145.0" layoutY="199.0" prefHeight="466.0" prefWidth="1210.0">
+        <columns>
+          <TableColumn fx:id="Col_nomUser" prefWidth="136.8000030517578" text="Nom_Client" />
+            <TableColumn fx:id="Col_type" prefWidth="140.0" text="Type" />
+            <TableColumn fx:id="Col_contenu" minWidth="8.800048828125" prefWidth="614.4000244140625" text="Contenu" />
+            <TableColumn fx:id="Col_Repond" prefWidth="274.4000244140625" text="Action" />
+        </columns>
+      </TableView>
+      <Label fx:id="labelTitre" layoutX="605.0" layoutY="41.0" text="Reclamations des clients" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="home" layoutX="1304.0" layoutY="106.0" mnemonicParsing="false" onAction="#back1" text="home" />
+   </children>
+</AnchorPane>

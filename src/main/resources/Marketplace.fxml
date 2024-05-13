@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Marketplace">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="687.0" layoutX="-370.0" layoutY="-296.0" rotate="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1280.0" />
+        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="1212.0" layoutY="18.0" onMouseClicked="#panierBtnClicked" pickOnBounds="true" preserveRatio="true" styleClass="panier-btn">
+            <image>
+                <Image url="@icons/dark/shopping-basket-2-line.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="back_button1" layoutX="816.0" layoutY="112.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="82.0" styleClass="article-btn" text="Home" />
+
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfdfdf" height="35.0" layoutX="921.0" layoutY="18.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="recherche" width="243.0" />
+        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="930.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icons/dark/search-line.png" />
+            </image>
+        </ImageView>
+        <TextField layoutX="965.0" layoutY="22.0" onKeyTyped="#recherche" prefHeight="26.0" prefWidth="190.0" promptText="Rechercher" styleClass="recherche-input" stylesheets="@style.css" />
+        <Label layoutX="536.0" layoutY="83.0" text="Marketplace">
+            <font>
+                <Font name="System Bold" size="43.0" />
+            </font>
+        </Label>
+        <ScrollPane hbarPolicy="NEVER" layoutX="251.0" layoutY="165.0" prefHeight="410.0" prefWidth="787.0" styleClass="scrollPane" stylesheets="@style.css">
+            <content>
+                <VBox fx:id="articlesVBox" alignment="TOP_CENTER" prefHeight="410.0" prefWidth="786.0" spacing="10.0" styleClass="vbox-container" stylesheets="@style.css" />
+            </content>
+        </ScrollPane>
+        <AnchorPane fx:id="detailsContainer" prefHeight="720.0" prefWidth="1280.0" styleClass="details-container" stylesheets="@style.css">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="687.0" layoutX="-369.0" layoutY="-297.0" rotate="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1280.0" />
+                <Button layoutX="1137.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="35.0" prefWidth="62.0" styleClass="article-btn" stylesheets="@style.css" text="Retour" />
+                <Label layoutX="507.0" layoutY="35.0" styleClass="title-detail" stylesheets="@style.css" text="Article en détails" />
+                <VBox layoutX="272.0" layoutY="142.0" prefHeight="494.0" prefWidth="750.0" styleClass="article-detail-container" stylesheets="@style.css">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="358.0" spacing="20.0">
+                            <children>
+                                <Circle fx:id="imgDetailContainer" fill="DODGERBLUE" radius="54.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                                <Text fx:id="nomProduit" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-produit-detail" text="Nom Produit" wrappingWidth="182.936767578125" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="358.0" spacing="20.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-produit-detail" text="Description" wrappingWidth="182.936767578125">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin></Text>
+                                <Text fx:id="descriptionDetail" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-produit-detail" text="Nom Produit" wrappingWidth="312.5367431640625" />
+                            </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onMouseClicked="#ajoutPanier" prefHeight="35.0" prefWidth="128.0" styleClass="article-btn" stylesheets="@style.css" text="Ajouter panier">
+                            <VBox.margin>
+                                <Insets left="300.0" />
+                            </VBox.margin></Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="panierContainer" layoutX="300.0" prefHeight="720.0" prefWidth="1280.0" styleClass="panier-container" stylesheets="@style.css">
+            <children>
+                <ImageView fx:id="pdfimage" fitHeight="55.0" fitWidth="62.0" layoutX="1073.0" layoutY="20.0" onMouseClicked="#exportTopdf">
+
+                    <image>
+                        <Image url="@icons8-pdf-64.png" />
+                    </image>
+                </ImageView>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="687.0" layoutX="-369.0" layoutY="-296.0" rotate="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1280.0" />
+                <Label layoutX="596.0" layoutY="14.0" styleClass="title-detail" stylesheets="@style.css" text="Panier">
+                    <font>
+                        <Font size="43.0" />
+                    </font>
+                </Label>
+                <ScrollPane hbarPolicy="NEVER" layoutX="253.0" layoutY="171.0" prefHeight="410.0" prefWidth="787.0" styleClass="scrollPane" stylesheets="@style.css">
+                    <content>
+                        <VBox fx:id="panierVBox" alignment="TOP_CENTER" prefHeight="410.0" prefWidth="786.0" spacing="10.0" styleClass="vbox-container" />
+                    </content>
+                </ScrollPane>
+                <Button layoutX="1173.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="35.0" prefWidth="62.0" styleClass="article-btn" stylesheets="@style.css" text="Retour" />
+                <Text fx:id="sommePrixText" layoutX="546.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nom-produit" text="125 TND" wrappingWidth="459.73675537109375">
+                    <font>
+                        <Font name="System Bold" size="80.0" />
+                    </font>
+                </Text>
+                <Text fx:id="sommePrixText1" layoutX="546.0" layoutY="659.0" strokeType="OUTSIDE" strokeWidth="0.0" text="130 TND" wrappingWidth="487.2033309936524">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Circle layoutX="48.0" layoutY="34.0" radius="34.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                <Text fx:id="nomProduit1" fill="WHITE" layoutX="30.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo-title" text="Viragecom" wrappingWidth="214.40340423583984">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Text>
+
+            <Button fx:id="back_button" layoutX="816.0" layoutY="112.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="82.0" styleClass="article-btn" text="Home" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

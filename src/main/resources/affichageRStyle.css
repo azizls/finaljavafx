@@ -1,0 +1,101 @@
+#labelAtt {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-padding: 8px 12px; /* Padding around the text */
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-color: #ffffff; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+#labelTitre {
+    -fx-font-size: 28px;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-background-color: #2f46c7; /* Background color */
+    -fx-padding: 10px 16px; /* Padding around the text */
+    -fx-background-radius: 5px; /* Background radius */
+}
+
+/* Style for the TableView */
+.table-view {
+    -fx-background-color: #f9f9f9; /* Background color */
+    -fx-padding: 20px; /* Padding around the table */
+    -fx-border-color: #ddd; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 10px; /* Border radius */
+}
+
+/* Style for the Table column headers */
+
+.table-view .column-header-background {
+    -fx-background-color: blue;
+}
+
+/* Style for the Table cells */
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-border-color: #ddd; /* Border color */
+    -fx-border-width: 0 0 1 0; /* Border width (bottom only) */
+}
+
+
+.table-view .column-header-background {
+
+    -fx-background-color: linear-gradient(to bottom, #1a69ff, #2c3e50); /* Blue gradient background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 10px 20px; /* Padding */
+}
+
+
+/* Style for the selected Table cells */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #1976D2 !important; /* Dark blue background color of the selected cell */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-color: #1976D2; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+}
+.table-view .table-row-cell:hover{
+    -fx-background-color: #b6b6b6;
+}
+
+/* Style for the odd rows */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #f5f5f5; /* Background color for odd rows */
+}
+
+/* Style for the even rows */
+.table-view .table-row-cell:even {
+    -fx-background-color: #ffffff; /* Background color for even rows */
+}
+
+/* Style for the Button */
+.button {
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-background-color: #1a69ff; /* Blue background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 5px; /* Border radius */
+    -fx-cursor: pointer; /* Cursor style */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 5,0,0,2 ); /* Drop shadow effect */
+    -fx-transition: background-color 0.3s, -fx-translate-y 0.3s; /* Transition effect */
+}
+
+/* Hover effect for the Button */
+.button:hover {
+    -fx-background-color: #498ffc; /* Background color on hover */
+    -fx-translate-y: -4px; /* Move the button slightly up */
+    -fx-scale-x: 1.05; /* Scale the button on hover */
+    -fx-scale-y: 1.05; /* Scale the button on hover */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.4) , 10,0,0,8 ); /* Enhance shadow on hover */
+    -fx-rotate: 2deg; /* Rotate slightly on hover */
+}
+
+/* Pressed effect for the Button */
+.button:pressed {
+    -fx-translate-y: 1px; /* Move the button slightly down */
+}

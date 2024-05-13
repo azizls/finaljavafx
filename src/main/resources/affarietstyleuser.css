@@ -1,0 +1,109 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 19 févr. 2023, 14:02:00
+    Author     : turki
+*/
+#Apane
+{
+    -fx-background-color:darkblue;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#8097db, #16525e);
+}
+.root {
+    /*This applies styling for the root node*/
+    -fx-background-color: linear-gradient(
+      from 0% 0% to 100% 200%,
+      repeat,
+      #ffffff 20%,
+      #ffffff 60%
+    );
+    -fx-font-family: "Lucida Console";
+  }
+.label {
+    /* Styling for all Control with the class of 'label' */
+    -fx-font-family: "Comic Sans MS";
+    -fx-padding: -2px;
+    -fx-start-margin: 2px;
+    -fx-end-margin: 2px;
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+  }
+  .text-field {
+    -fx-font-family: "Trebuchet MS";
+    -fx-background-color: transparent;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-border-color: #999;
+    -fx-border-width: 2px;
+}
+
+  .border-pane {
+    -fx-background-color: white;
+    -fx-padding: 10px;
+}
+
+.border-pane > .top {
+    -fx-background-color: #c100fc;
+    -fx-padding: 5px;
+}
+
+.border-pane > .left {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 5px;
+}
+
+.border-pane > .center {
+    -fx-padding: 5px;
+}
+
+.border-pane > .right {
+    -fx-background-color: #c100fc;
+    -fx-padding: 5px;
+}
+
+.border-pane > .bottom {
+    -fx-background-color: #c100fc;
+    -fx-padding: 5px;
+}
+.titleLabel {
+    -fx-font-family: "Times New Roman";
+    
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 15px;
+}
+.labelmdp{
+    -fx-font-family: "Times New Roman";
+    
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+    -fx-padding: 10px;
+    -fx-wrap-text: true;
+}
+.my-pane {
+    -fx-background-color: #663bff;
+  }
+  .my-pane2 {
+    -fx-background-color: #282836;
+  }
+  .my-button {
+    -fx-background-color: #8097db;
+    -fx-background-radius: 5px 10px 15px 20px;
+    -fx-font-size: 16px;
+  }
+  .my-image-view {
+    -fx-background-color: transparent;
+  -fx-background-radius: 50px;
+  -fx-background-insets: 0;
+  -fx-min-width: 100px;
+  -fx-min-height: 100px;
+  -fx-max-width: 100px;
+  -fx-max-height: 100px;
+  }

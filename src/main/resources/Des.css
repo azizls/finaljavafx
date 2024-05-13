@@ -1,0 +1,100 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 févr. 2023, 16:11:58
+    Author     : zakar
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.2pc .2px .4px .2px;
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color:#e74141;
+    
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    
+}
+.minimize:hover{
+    -fx-background-color:#dadada;
+}
+
+.nav-form{
+    -fx-background-color: linear-gradient(to top right,#8097db,#16525e);
+}
+
+.nav-btn{
+   -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-alignment: CENTER_LEFT;
+    
+}
+
+.nav-btn:hover{
+    -fx-background-color:linear-gradient(to top right,#8097db,#16525e);
+}
+
+.signout{
+    -fx-background-color:#ae2d3c;
+    -fx-cursor:hand;
+    -fx-background-radius:15px;
+    
+}
+
+.signout:hover{
+    -fx-background-color:#d62651;
+       
+}
+
+.bg-white{
+    -fx-background-color:#fff;
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.3),8,0,0,0);
+    -fx-background-radius:8px;
+    
+}
+
+.bg-white :hover{
+      -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),8,0,0,0);
+}
+
+.card1{
+    -fx-background-color:linear-gradient(to top right,#cf2929,#1d0609);
+    -fx-background-radius:0px 10px 10px 0px;
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}
+.card1:hover{
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}
+
+.card2{
+    -fx-background-color:linear-gradient(to top right,#be8b54,#602f0c);
+    -fx-background-radius:0px 10px 10px 0px;
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}
+.card2:hover{
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}
+
+.card3{
+    -fx-background-color:linear-gradient(to top right,#5464be,#0c0c60);
+    -fx-background-radius:0px 10px 10px 0px;
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}
+.card3:hover{
+    -fx-effect:dropshadow(three-pass-box ,rgba(0,0,0,.5),5,0,0,0);
+}

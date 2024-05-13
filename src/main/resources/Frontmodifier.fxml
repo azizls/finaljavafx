@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="847.0" prefWidth="1229.0" styleClass="my" stylesheets="@affarietstyleuser.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FrontmodifierController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2350d9" height="847.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+      <Pane prefHeight="847.0" prefWidth="275.0" styleClass="card3">
+         <children>
+            <Button layoutX="71.0" layoutY="238.0" mnemonicParsing="false" onAction="#monprofil" prefHeight="49.0" prefWidth="151.0" styleClass="nav-btn" text="Mon profil">
+               <stylesheets>
+                  <URL value="@designDashbord.css" />
+                  <URL value="@affichageStyle.css" />
+               </stylesheets></Button>
+            <Button layoutX="71.0" layoutY="521.0" mnemonicParsing="false" onAction="#produit" prefHeight="49.0" prefWidth="151.0" styleClass="nav-btn" text="Marketplace">
+               <stylesheets>
+                  <URL value="@designDashbord.css" />
+                  <URL value="@affichageStyle.css" />
+               </stylesheets>
+            </Button>
+            <Button layoutX="71.0" layoutY="424.0" mnemonicParsing="false" onAction="#espacepartenaire" prefHeight="49.0" prefWidth="151.0" styleClass="nav-btn" text="Espace Partenaire">
+               <stylesheets>
+                  <URL value="@designDashbord.css" />
+                  <URL value="@affichageStyle.css" />
+               </stylesheets>
+            </Button>
+            <Button layoutX="71.0" layoutY="331.0" mnemonicParsing="false" onAction="#evenement" prefHeight="49.0" prefWidth="151.0" styleClass="nav-btn" text="Evenemnt">
+               <stylesheets>
+                  <URL value="@designDashbord.css" />
+                  <URL value="@affichageStyle.css" />
+               </stylesheets>
+            </Button>
+            <Button layoutX="71.0" layoutY="608.0" mnemonicParsing="false" onAction="#reclamation" prefHeight="49.0" prefWidth="151.0" styleClass="nav-btn" text="Reclamation">
+               <stylesheets>
+                  <URL value="@designDashbord.css" />
+                  <URL value="@affichageStyle.css" />
+               </stylesheets>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LOGOFII-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="textNom" layoutX="471.0" layoutY="305.0" prefHeight="27.0" prefWidth="141.0" />
+      <Label layoutX="372.0" layoutY="309.0" text="nom" />
+      <TextField fx:id="textAge" layoutX="471.0" layoutY="378.0" prefHeight="27.0" prefWidth="141.0" />
+      <TextField fx:id="textMdp" layoutX="471.0" layoutY="446.0" />
+      <Label layoutX="377.0" layoutY="382.0" prefHeight="17.0" prefWidth="29.0" text="age" />
+      <Label layoutX="344.0" layoutY="452.0" text="mot de passe" />
+      <TextField fx:id="textPrenom" layoutX="865.0" layoutY="300.0" />
+      <TextField fx:id="textAdresse" layoutX="865.0" layoutY="374.0" />
+      <Label layoutX="751.0" layoutY="304.0" text="prenom" />
+      <Label layoutX="752.0" layoutY="380.0" text="adresse" />
+      <TextField fx:id="textNum" layoutX="865.0" layoutY="444.0" />
+      <Label layoutX="751.0" layoutY="450.0" text="numero" />
+      <Button fx:id="btnModifier" layoutX="528.0" layoutY="555.0" mnemonicParsing="false" onAction="#modifier" styleClass="my-button" text="modifier" />
+      <ImageView fx:id="qrcode" fitHeight="117.0" fitWidth="188.0" layoutX="733.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView" fitHeight="173.0" fitWidth="264.0" layoutX="563.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</AnchorPane>

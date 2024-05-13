@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Street View</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Set the size of the street view */
+        #street-view {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="street-view"></div>
+<script>
+    function initialize() {
+        var latitude = $latitude;
+        var longitude = $longitude;
+
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('street-view'), {
+                position: { lat: parseFloat(latitude), lng: parseFloat(longitude) },
+                pov: {
+                    heading: 235,
+                    pitch: 10
+                }
+            });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvGfBCJhvd5MJCSnY6XQIoKVAj3qEN0UY&callback=initialize"
+        async defer></script>
+</body>
+</html>

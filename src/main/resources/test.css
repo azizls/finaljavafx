@@ -1,0 +1,33 @@
+/* Styles for the Rectangle */
+.rectangle-background {
+    -fx-arc-height: 5.0;
+    -fx-arc-width: 5.0;
+    -fx-fill: #2350d9;
+    -fx-stroke: black;
+    -fx-stroke-type: inside;
+    -fx-width: 1128.0px;
+    -fx-height: 779.0px;
+    -fx-layout-x: -384.0px;
+    -fx-layout-y: -350.0px;
+    -fx-rotate: 140.0;
+}
+
+/* Styles for the Circle */
+.circle {
+    -fx-layout-x: 65.0px;
+    -fx-layout-y: 48.0px;
+    -fx-radius: 34.0px;
+    -fx-stroke: black;
+    -fx-stroke-type: inside;
+}
+
+/* Styles for the Text */
+.text {
+    -fx-fill: white;
+    -fx-layout-x: 52.0px;
+    -fx-layout-y: 56.0px;
+    -fx-stroke-type: outside;
+    -fx-stroke-width: 0.0;
+    -fx-font-size: 24.0px;
+    -fx-font-family: "System Bold Italic";
+}
